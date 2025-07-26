@@ -4,7 +4,7 @@ from langchain_core.output_parsers import StrOutputParser
 import streamlit as st
 from dotenv import load_dotenv
 import os
-load_dotenv("../.env")
+load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
